@@ -1,0 +1,12 @@
+<html>
+<div class="convertTime">1470373375</div>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="local-time.js">
+<script>
+$(".convertTime").each(function () {
+            var timestemp   =   parseInt($(this).text());
+            var date = formatDateLocal("dd MMM yyyy",timestemp*1000,false);
+            $(this).text(date);
+        });
+</script>
+</html>
